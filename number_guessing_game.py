@@ -9,8 +9,9 @@ maks_numb = int(input('What number would like to pick to be maks number: '))
 # niech komputer wybierze randomowa liczbe za pomoca randomint(0, wybor usera)
 random_numb = randint(1, maks_numb)
 # zabezpiecz odpowiedź od stringow(isdigit) i liczb ponizej zera. Jezeli sie nie zgadza to quit
-guess = int(input('Pick a number: '))
+
 while True:
+    guess = int(input('Pick a number: '))
     if guess == random_numb:
         print('Congratz, you got it!')
         quit()
