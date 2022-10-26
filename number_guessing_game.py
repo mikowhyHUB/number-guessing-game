@@ -7,7 +7,7 @@ do ulepszenia appki:
 from curses.ascii import isdigit
 from random import randint
 
-# zacznij jakim numberem chce user mieć maks range w grze i zabezpiecz od złych odp
+# first user needs to pick how hard game would it be by chosing maks range number
 while True:
     try:
         maks_numb = int(
@@ -21,13 +21,14 @@ while True:
         print('ok, you chose easy mode')
 
 
-# niech komputer wybierze randomowa liczbe za pomoca randomint(0, wybor usera)
+# computer picking random numbr of the users range
 random_numb = randint(1, maks_numb)
-# zabezpiecz odpowiedź od stringow(isdigit) i liczb ponizej zera. Jezeli sie nie zgadza to quit
-# uyj while true by user zgadywal numer jaki komputer wylosowal
+
+# while true for mulitply answers
 count = 1
 while True:
     guess = input('Pick a number: ')
+    # protecting program from wrong inputs
     if guess.isdigit():
         guess = int(guess)
     else:
@@ -42,8 +43,5 @@ while True:
     else:
         print('Too high.')
         count += 1
-# podlicz ile razy ktos probowal razy zgadanac number
+# counting how many moves took to find the answer
 print('You did it in', count, ' moves!')
-
-
-# mozna ulepszyc gre za pomocą dodania ifelse który wskaze czy nie przeskoczylismy numeru
