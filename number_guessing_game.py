@@ -1,8 +1,8 @@
 '''
-do ulepszenia appki:
-1. jezeli ponizej 10 to wybrales latwy jezeli powyzej to wybrales sredni itp(linia 17)
-2. except value err nie działa. google it
-3. 39 i 42 mozna zrobic ladniejszy kod (nie trzeba dwoch elif)
+TODO:
+1. line 17. easy mode if u chose 10 etc.
+2. value err doesnt work
+3. improve to clean code
 '''
 from curses.ascii import isdigit
 from random import randint
