@@ -1,4 +1,4 @@
-# Number Guessin Game
+# Number Guessing Game
 A simple game to guess what number computer picked
 
 ## Introduction
